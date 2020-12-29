@@ -99,12 +99,10 @@
     border-radius: 10px;
     font-size: 20px;
     font-family: "Josefin Sans";
-    color: #00000081;
 }
 
 .formelement:hover {
     background: #647dee11;
-    color: #000000;
 }
 
 .formelement:focus-within>.forward {
@@ -114,14 +112,36 @@
     transition: all 0.2s ease-in-out;
 }
 
+.valid {
+    color: rgb(41, 197, 41);
+    background-color: rgba(17, 160, 17, 0.308);
+}
+
+.invalid {
+    color: red;
+}
+.validform {
+    border:1px solid rgb(41, 197, 41);
+    background-color: rgba(17, 160, 17, 0.308);
+    color: rgb(41, 197, 41);
+}
+
+.invalidform {
+
+    color: 	#FF0000;
+    border:1px solid #FF0000;
+    background-color: #FF0000;
+}
+
+
 .form-control {
     background: rgba(255, 255, 255, 0)!important;
     border: none!important;
 }
 
 .form-control:focus {
-    color: black;
     box-shadow: none;
+    color: unset!important;
 }
 
 .forward {
@@ -178,24 +198,6 @@
     height: 30%;
     bottom: 0;
     z-index: 30;
-}
-
-.form-input .error {
-    display: none;
-    width: 100%;
-    margin-top: 5px;
-    font-size: 12px;
-    color: #d42727;
-}
-
-.form-input.incorrect .error {
-    display: block;
-}
-
-.form-input.incorrect input,
-.form-input.incorrect textarea,
-.form-input.incorrect select {
-    border-color: #d42727;
 }
 
 .sbutton {

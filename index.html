@@ -53,118 +53,126 @@
 
                     <div class="formmask">
                         <div class="formparent" id="parent">
-                            <div class="formchild">
-                                <h3 style="margin-bottom: 50px">Enter your Name</h3>
-                                <div class="formelement">
-                                    <input type="text" class="form-control form-control-lg" id="name" placeholder="Enter your name" />
-                                    <button type="button" id="1" onclick="forward(this)" class="btn forward">
-                                    <div class="error"></div>
-                      <i data-feather="arrow-right"></i>
-                    </button>
-                                </div>
-                            </div>
-                            <div class="formchild">
-                                <h3 style="margin-bottom: 50px">Enter your E-mail ID</h3>
-                                <div class="formelement">
-                                    <input type="email" class="form-control form-control-lg" id="emailid" placeholder="Enter your email ID" />
-                                    <button type="button" id="2" onclick="forward(this)" class="btn forward">
-                                    <div class="error"></div>
-                      <i data-feather="arrow-right"></i>
-                    </button>
-                                </div>
-                            </div>
-                            <div class="formchild">
-                                <h3 style="margin-bottom: 50px">Enter your Company name</h3>
-                                <div class="formelement">
-                                    <input type="text" class="form-control form-control-lg" id="cname" placeholder="Enter your Company name" />
-                                    <button type="button" id="3" onclick="forward(this)" class="btn forward">
-                      <i data-feather="arrow-right"></i>
-                    </button>
-                                </div>
-                            </div>
-                            <div class="formchild">
-                                <h3 style="margin-bottom: 50px">Enter your Phone number</h3>
-                                <div class="formelement">
-                                    <input type="tel" style="width: 40%; margin-right: 10px" class="form-control form-control-lg" id="acode" placeholder="Code" />
-                                    <div class="splitter"></div>
-                                    <input type="tel" class="form-control form-control-lg" id="phonenumber" placeholder="Phone number" />
-                                    <button type="button" id="4" onclick="forward(this)" class="btn forward">
-                      <i data-feather="arrow-right"></i>
-                    </button>
-                                </div>
-                            </div>
-                            <div class="formchild">
-                                <h3 style="margin-bottom: 50px">Enter Password</h3>
-                                <div class="formelement">
-                                    <input type="password" class="form-control form-control-lg" id="pass" placeholder="Enter password" />
-                                    <button type="button" id="5" onclick="forward(this)" class="btn forward">
-                      <i data-feather="arrow-right"></i>
-                    </button>
-                                </div>
-                            </div>
-                            <div class="formchild">
-                                <h3 style="margin-bottom: 50px">Enter Address</h3>
-                                <div class="formelement">
-                                    <textarea rows="4" type="text" class="form-control form-control-lg" id="add" placeholder="Enter Address"></textarea>
-                                    <button type="button" id="5" onclick="forward(this)" class="btn forward">
-                      <i data-feather="arrow-right"></i>
-                    </button>
-                                </div>
-                            </div>
-                            <div class="formchild">
-                                <h3 style="margin-bottom: 50px">Select Country</h3>
-                                <div class="formelement">
-                                    <select type="text" class="form-control form-control-lg" id="country" placeholder="Enter Address">
-                                        <option value="1">India</option>
-                                        <option value="1">USA</option>
-                                        <option value="1">UK</option>
-                                    </select>
-                                    <button type="button" id="5" onclick="forward(this)" class="btn forward">
-                      <i data-feather="arrow-right"></i>
-                    </button>
-                                </div>
-                            </div>
-                            <div class="formchild">
-                                <h3 style="margin-bottom: 50px">Enter State</h3>
-                                <div class="formelement">
-                                    <input type="text" class="form-control form-control-lg" id="state" placeholder="Enter state" />
-                                    <button type="button" id="5" onclick="forward(this)" class="btn forward">
-                      <i data-feather="arrow-right"></i>
-                    </button>
-                                </div>
-                            </div>
-                            <div class="formchild">
-                                <h3 style="margin-bottom: 50px">Enter City</h3>
-                                <div class="formelement">
-                                    <input type="text" class="form-control form-control-lg" id="City" placeholder="Enter City" />
-                                    <button type="button" id="5" onclick="forward(this)" class="btn forward">
-                      <i data-feather="arrow-right"></i>
-                    </button>
-                                </div>
-                            </div>
-                            <div class="formchild">
-                                <h3 style="margin-bottom: 50px">Enter Postal Code</h3>
-                                <div class="formelement">
-                                    <input type="number" class="form-control form-control-lg" id="pcode" placeholder="Enter Postal Code" />
-                                    <button type="button" id="5" onclick="forward(this)" class="btn forward">
-                      <i data-feather="arrow-right"></i>
-                    </button>
+                            <form name="login-form" id="login-form" action="/">
+                                <div class="formchild">
+                                    <h3 style="margin-bottom: 50px">Enter your Name</h3>
+                                    <div class="formelement">
+                                        <input type="text" class="form-control form-control-lg" name="username" id="username" placeholder="Enter your name" required/>
+                                        <button  type="button" id="1" onclick="forward(this)" class="btn forward">
+                                            <i data-feather="arrow-right"></i>
+                                        </button>
+                                    </div>
+                                    <div class="valid"></div>
+                                    <div class="invalid"></div>
                                 </div>
                                 <div class="formchild">
-                                    <h3 style="margin-bottom: 50px">Enter Domian Name</h3>
-                                    <div class="submitclass">
-                                        <div class="formelement">
-                                            <input type="url" class="form-control form-control-lg" id="pcode" placeholder="Enter Domian Name" value="www." />
-                                            <!-- <button type="button" id="5" onclick="forward(this)" class="btn forward">
-                                            <i data-feather="arrow-right"></i>
-                                            </button> -->
-                                        </div>
-                                        <div><button class="btn btn-lg sbutton" type="submit"> <p style="margin: 0px;">Submit</p></button></div>
+                                    <h3 style="margin-bottom: 50px">Enter your E-mail ID</h3>
+                                    <div class="formelement">
+                                        <input type="email" class="form-control form-control-lg" name="emailid" id="emailid" placeholder="Enter your email ID" />
+                                        <button type="button"    id="2" onclick="forward(this)" class="btn forward">
+                                        
+                          <i data-feather="arrow-right"></i>
+                        </button>
                                     </div>
                                 </div>
+                                <div class="formchild">
+                                    <h3 style="margin-bottom: 50px">Enter your Company name</h3>
+                                    <div class="formelement">
+                                        <input type="text" name="cname" class="form-control form-control-lg" id="cname" placeholder="Enter your Company name" />
+                                        <button type="button"   id="3" onclick="forward(this)" class="btn forward">
+                          <i data-feather="arrow-right"></i>
+                        </button>
+                                    </div>
+                                </div>
+                                <div class="formchild">
+                                    <h3 style="margin-bottom: 50px">Enter your Phone number</h3>
+                                    <div class="formelement">
+                                        <input type="tel" style="width: 40%; margin-right: 10px" class="form-control form-control-lg" name="code" id="code" placeholder="Code" />
+                                        <div class="splitter"></div>
+                                        <input type="tel" name="tnumber" class="form-control form-control-lg" id="tnumber" placeholder="Phone number" />
+                                        <button type="button" id="4" onclick="forward(this)" class="btn forward">
+                          <i data-feather="arrow-right"></i>
+                        </button>
+                                    </div>
+                                </div>
+                                <div class="formchild">
+                                    <h3 style="margin-bottom: 50px">Enter Password</h3>
+                                    <div class="formelement">
+                                        <input type="password" name="password" class="form-control form-control-lg" id="password" placeholder="Enter password" />
+                                        <button type="button" id="5" onclick="forward(this)" class="btn forward">
+                          <i data-feather="arrow-right"></i>
+                        </button>
+                                    </div>
+                                    <small id="passhelp" class="form-text text-muted" > <p>Password must contain one Capital Alphabet and a number</p> </small>
+                                </div>
+                                <div class="formchild">
+                                    <h3 style="margin-bottom: 50px">Enter Address</h3>
+                                    <div class="formelement">
+                                        <textarea rows="4" type="text" class="form-control form-control-lg" id="add" placeholder="Enter Address"></textarea>
+                                        <button type="button" id="6" onclick="forward(this)" class="btn forward">
+                          <i data-feather="arrow-right"></i>
+                        </button>
+                                    </div>
+                                </div>
+                                <div class="formchild">
+                                    <h3 style="margin-bottom: 50px">Select Country</h3>
+                                    <div class="formelement">
+                                        <select type="text" class="form-control form-control-lg" id="country" placeholder="Enter Address">
+                                            <option value="1">India</option>
+                                            <option value="1">USA</option>
+                                            <option value="1">UK</option>
+                                        </select>
+                                        <button type="button" id="7" onclick="forward(this)" class="btn forward">
+                          <i data-feather="arrow-right"></i>
+                        </button>
+                                    </div>
+                                </div>
+                                <div class="formchild">
+                                    <h3 style="margin-bottom: 50px">Enter State</h3>
+                                    <div class="formelement">
+                                        <input type="text" class="form-control form-control-lg" id="state" placeholder="Enter state" />
+                                        <button type="button" id="8" onclick="forward(this)" class="btn forward">
+                          <i data-feather="arrow-right"></i>
+                        </button>
+                                    </div>
+                                </div>
+                                <div class="formchild">
+                                    <h3 style="margin-bottom: 50px">Enter City</h3>
+                                    <div class="formelement">
+                                        <input type="text" class="form-control form-control-lg" id="City" placeholder="Enter City" />
+                                        <button type="button" id="9" onclick="forward(this)" class="btn forward">
+                          <i data-feather="arrow-right"></i>
+                        </button>
+                                    </div>
+                                </div>
+                                <div class="formchild">
+                                    <h3 style="margin-bottom: 50px">Enter Postal Code</h3>
+                                    <div class="formelement">
+                                        <input type="number" class="form-control form-control-lg" id="pcode" placeholder="Enter Postal Code" />
+                                        <button type="button" id="10" onclick="forward(this)" class="btn forward">
+                          <i data-feather="arrow-right"></i>
+                        </button>
+                                    </div>
+                                    <div class="formchild">
+                                        <h3 style="margin-bottom: 50px">Enter Domian Name</h3>
+                                        <div class="submitclass">
+                                            <div class="formelement">
+                                                <input type="url" name="weburl" class="form-control form-control-lg" id="weburl" placeholder="Enter Domian Name" value="www." />
+                                                
+                                            </div>
+                                            <div>
+                                                <button class="btn btn-lg sbutton" type="button"> 
+                                                    <p style="margin: 0px;">Submit</p>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <small id="urlhelp" class="form-text text-muted" > <p>example : www.hashroot.com</p> </small>
+                                    </div>
 
 
-                            </div>
+                                </div>
+                            </form>
+
                         </div>
                     </div>
                 </div>
@@ -177,7 +185,8 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 <script src="./js/formslider.js"></script>
-<script src="./js/validator.js"></script>
+<script src="./js/validate.js"></script>
+
 <script>
     feather.replace();
 </script>

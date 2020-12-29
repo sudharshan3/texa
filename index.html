@@ -1,0 +1,185 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <title>Texa</title>
+    <style>
+        .body {
+            font-family: "Josefin Sans";
+            font-weight: 400;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="backdrop">
+        <div class="container cardwrapper">
+            <div class="row" style="height: 100%">
+                <div class="col-sm-4">
+                    <div class="details">
+                        <div><img src="" alt="" srcset="" /></div>
+                        <div>
+                            <h3 style="margin-bottom: 30px">Sign Up</h3>
+                            <p>
+                                Get started in a few clicks and stand out from the rest of the pack!
+                            </p>
+                        </div>
+                        <div>
+                            <div class="loginwrapper">
+                                <p style="margin-bottom: 5px">Already Have an account?</p>
+                                <a href="#" style="text-decoration: none">
+                                    <p style="color: #fff; font-weight: 800; margin-bottom: 5px">
+                                        Login
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-8" style="overflow: hidden; position: relative">
+                    <div class="gradient1"></div>
+                    <div class="gradient2"></div>
+
+                    <button type="button" id="bck" onclick="backward()" class="btn backbutton">
+              <i data-feather="arrow-left"></i>
+            </button>
+
+
+                    <div class="formmask">
+                        <div class="formparent" id="parent">
+                            <div class="formchild">
+                                <h3 style="margin-bottom: 50px">Enter your Name</h3>
+                                <div class="formelement">
+                                    <input type="text" class="form-control form-control-lg" id="name" placeholder="Enter your name" />
+                                    <button type="button" id="1" onclick="forward(this)" class="btn forward">
+                                    <div class="error"></div>
+                      <i data-feather="arrow-right"></i>
+                    </button>
+                                </div>
+                            </div>
+                            <div class="formchild">
+                                <h3 style="margin-bottom: 50px">Enter your E-mail ID</h3>
+                                <div class="formelement">
+                                    <input type="email" class="form-control form-control-lg" id="emailid" placeholder="Enter your email ID" />
+                                    <button type="button" id="2" onclick="forward(this)" class="btn forward">
+                                    <div class="error"></div>
+                      <i data-feather="arrow-right"></i>
+                    </button>
+                                </div>
+                            </div>
+                            <div class="formchild">
+                                <h3 style="margin-bottom: 50px">Enter your Company name</h3>
+                                <div class="formelement">
+                                    <input type="text" class="form-control form-control-lg" id="cname" placeholder="Enter your Company name" />
+                                    <button type="button" id="3" onclick="forward(this)" class="btn forward">
+                      <i data-feather="arrow-right"></i>
+                    </button>
+                                </div>
+                            </div>
+                            <div class="formchild">
+                                <h3 style="margin-bottom: 50px">Enter your Phone number</h3>
+                                <div class="formelement">
+                                    <input type="tel" style="width: 40%; margin-right: 10px" class="form-control form-control-lg" id="acode" placeholder="Code" />
+                                    <div class="splitter"></div>
+                                    <input type="tel" class="form-control form-control-lg" id="phonenumber" placeholder="Phone number" />
+                                    <button type="button" id="4" onclick="forward(this)" class="btn forward">
+                      <i data-feather="arrow-right"></i>
+                    </button>
+                                </div>
+                            </div>
+                            <div class="formchild">
+                                <h3 style="margin-bottom: 50px">Enter Password</h3>
+                                <div class="formelement">
+                                    <input type="password" class="form-control form-control-lg" id="pass" placeholder="Enter password" />
+                                    <button type="button" id="5" onclick="forward(this)" class="btn forward">
+                      <i data-feather="arrow-right"></i>
+                    </button>
+                                </div>
+                            </div>
+                            <div class="formchild">
+                                <h3 style="margin-bottom: 50px">Enter Address</h3>
+                                <div class="formelement">
+                                    <textarea rows="4" type="text" class="form-control form-control-lg" id="add" placeholder="Enter Address"></textarea>
+                                    <button type="button" id="5" onclick="forward(this)" class="btn forward">
+                      <i data-feather="arrow-right"></i>
+                    </button>
+                                </div>
+                            </div>
+                            <div class="formchild">
+                                <h3 style="margin-bottom: 50px">Select Country</h3>
+                                <div class="formelement">
+                                    <select type="text" class="form-control form-control-lg" id="country" placeholder="Enter Address">
+                                        <option value="1">India</option>
+                                        <option value="1">USA</option>
+                                        <option value="1">UK</option>
+                                    </select>
+                                    <button type="button" id="5" onclick="forward(this)" class="btn forward">
+                      <i data-feather="arrow-right"></i>
+                    </button>
+                                </div>
+                            </div>
+                            <div class="formchild">
+                                <h3 style="margin-bottom: 50px">Enter State</h3>
+                                <div class="formelement">
+                                    <input type="text" class="form-control form-control-lg" id="state" placeholder="Enter state" />
+                                    <button type="button" id="5" onclick="forward(this)" class="btn forward">
+                      <i data-feather="arrow-right"></i>
+                    </button>
+                                </div>
+                            </div>
+                            <div class="formchild">
+                                <h3 style="margin-bottom: 50px">Enter City</h3>
+                                <div class="formelement">
+                                    <input type="text" class="form-control form-control-lg" id="City" placeholder="Enter City" />
+                                    <button type="button" id="5" onclick="forward(this)" class="btn forward">
+                      <i data-feather="arrow-right"></i>
+                    </button>
+                                </div>
+                            </div>
+                            <div class="formchild">
+                                <h3 style="margin-bottom: 50px">Enter Postal Code</h3>
+                                <div class="formelement">
+                                    <input type="number" class="form-control form-control-lg" id="pcode" placeholder="Enter Postal Code" />
+                                    <button type="button" id="5" onclick="forward(this)" class="btn forward">
+                      <i data-feather="arrow-right"></i>
+                    </button>
+                                </div>
+                                <div class="formchild">
+                                    <h3 style="margin-bottom: 50px">Enter Domian Name</h3>
+                                    <div class="submitclass">
+                                        <div class="formelement">
+                                            <input type="url" class="form-control form-control-lg" id="pcode" placeholder="Enter Domian Name" value="www." />
+                                            <!-- <button type="button" id="5" onclick="forward(this)" class="btn forward">
+                                            <i data-feather="arrow-right"></i>
+                                            </button> -->
+                                        </div>
+                                        <div><button class="btn btn-lg sbutton" type="submit"> <p style="margin: 0px;">Submit</p></button></div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+<script src="./js/formslider.js"></script>
+<script src="./js/validator.js"></script>
+<script>
+    feather.replace();
+</script>
+
+</html>

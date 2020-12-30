@@ -158,7 +158,7 @@ function forward(elem){
     if (temp==1){
     a.style.transform='translateY(' + (-350 * count) + 'px) ';
     count += 1;
-    console.log(count);
+    // console.log(count);
     
     }
     else{
@@ -178,7 +178,7 @@ function forward(elem){
 function backward(){
         count-=1;
         a.style.transform='translateY(' + (-350 * (count-1)) + 'px) ';
-        console.log(count);
+        // console.log(count);
         if (count<=1){
             b.style.display='none';
         }

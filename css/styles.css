@@ -16,6 +16,14 @@
     }
 }
 
+.col-sm-4 {
+    display: block;
+}
+
+.col-sm-8 {
+    display: block;
+}
+
 .backdrop {
     background-color: #ffffff;
     background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
@@ -120,19 +128,18 @@
 .invalid {
     color: red;
 }
+
 .validform {
-    border:1px solid rgb(41, 197, 41);
+    border: 1px solid rgb(41, 197, 41);
     background-color: rgba(17, 160, 17, 0.308);
     color: rgb(41, 197, 41);
 }
 
 .invalidform {
-
-    color: 	#FF0000;
-    border:1px solid #FF0000;
+    color: #FF0000;
+    border: 1px solid #FF0000;
     background-color: #FF0000;
 }
-
 
 .form-control {
     background: rgba(255, 255, 255, 0)!important;
@@ -141,7 +148,6 @@
 
 .form-control:focus {
     box-shadow: none;
-    color: unset!important;
 }
 
 .forward {
@@ -211,9 +217,21 @@
     padding: auto 10px;
 }
 
+.loginmobilewrapper {
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.157);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+    color: #000;
+}
+
 .submitclass {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
 }
@@ -223,4 +241,57 @@
     box-shadow: 0 15px 30px #647dee50;
     transform: translate3d(0, -2px, 0);
     color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+    .loginmobilewrapper {
+        display: flex;
+    }
+    .gradient2 {
+        display: none;
+    }
+    p {
+        font-size: 15px;
+    }
+    h3 {
+        font-size: 25px;
+        margin-bottom: 15px!important;
+    }
+    .col-sm-4 {
+        height: 30%;
+    }
+    .col-sm-8 {
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .loginwrapper {
+        display: none;
+    }
+    .formmask {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .formparent {
+        width: 100%;
+        height: auto;
+        padding: 50px 0px;
+    }
+    .formchild {
+        width: 100%;
+        padding: 0px 20px 0px 20px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .formelement {
+        width: 100%;
+    }
+    .backbutton {
+        margin-left: 20px;
+    }
 }
